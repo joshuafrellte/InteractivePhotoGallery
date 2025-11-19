@@ -7,18 +7,42 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body onload="assignTabIndex()">
     <div id="display_box">
         Hover over an image below to display here
     </div>
 
     <div id="gallery">
-        <img class="preview" alt="Flower Boy" src="images/flowerboy.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
-        <img class="preview" alt="Graduation" src="images/graduation.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
-        <img class="preview" alt="Kids See Ghosts" src="images/ksg.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
-        <img class="preview" alt="Ye" src="images/ye.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
-        <img class="preview" alt="Some Rap Songs" src="images/somerapsongs.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
-        <img class="preview" alt="Melt My Eyez See Your Future" src="images/mmesyf.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Flower Boy" src="images/flowerboy.jpg" 
+            onmouseover="upDate(this)" 
+            onmouseout="unDo()"
+            onfocus="upDate(this)"
+            onblur="unDo()">
+        <img class="preview" alt="Graduation" src="images/graduation.jpg" 
+            onmouseover="upDate(this)" 
+            onmouseout="unDo()"
+            onfocus="upDate(this)"
+            onblur="unDo()">
+        <img class="preview" alt="Kids See Ghosts" src="images/ksg.jpg" 
+            onmouseover="upDate(this)" 
+            onmouseout="unDo()"
+            onfocus="upDate(this)"
+            onblur="unDo()">
+        <img class="preview" alt="Ye" src="images/ye.jpg" 
+            onmouseover="upDate(this)" 
+            onmouseout="unDo()"
+            onfocus="upDate(this)"
+            onblur="unDo()">
+        <img class="preview" alt="Some Rap Songs" src="images/somerapsongs.jpg" 
+            onmouseover="upDate(this)" 
+            onmouseout="unDo()"
+            onfocus="upDate(this)"
+            onblur="unDo()">
+        <img class="preview" alt="Melt My Eyez See Your Future" src="images/mmesyf.jpg" 
+            onmouseover="upDate(this)" 
+            onmouseout="unDo()"
+            onfocus="upDate(this)"
+            onblur="unDo()">
     </div>
 
     <script src="js/script.js"></script>

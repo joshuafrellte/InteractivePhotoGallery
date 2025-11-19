@@ -12,12 +12,12 @@ body {
 #display_box {
     background-image: radial-gradient(black, grey, white);
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bolder;
     text-align: center;
     text-shadow: 0 0 12px black;
-    width: 400px;
-    height: 400px;
+    width: 25%;
+    aspect-ratio: 1/1;
     margin: 3% auto;
     border: 8px solid rgb(0, 0, 0);
     border-radius: 20px;
@@ -44,7 +44,7 @@ body {
 }
 
 #gallery {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 31% 31% 31% ;

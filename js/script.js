@@ -8,12 +8,13 @@ function upDate(previewPic) {
     displayBox.style.animation = "none";
     displayBox.style.transition = "0.15s ease";
     displayBox.style.transform = "scale(1.1)";
+    console.log("On Display: "+previewPic.alt);
 }
 
 function unDo() {
     displayBox = document.getElementById('display_box');
     displayBox.innerHTML = "Hover over an image below to display here";
-    displayBox.style.backgroundImage = "linear-gradient(to bottom right, black, white)";
+    displayBox.style.backgroundImage = "radial-gradient(black, grey, white)";
     displayBox.style.borderColor = "black";
     displayBox.style.boxShadow = "0 0 20px black";
     displayBox.style.animation = "2s breathe ease-out alternate infinite";
@@ -23,9 +24,9 @@ function unDo() {
 function assignTabIndex() {
     images = document.querySelectorAll('img');
     for (let i=0; i<images.length; i++) {
-        images[i].setAttribute('tabindex',i);
-        console.log(images[i].alt+" tab index is set");
+        // images[i].tabIndex = 0;
+        images[i].setAttribute("tabindex","0");
+        console.log(images[i].alt+" tabindex: " + images[i].tabIndex);
     }
 }
 
-assignTabIndex()
